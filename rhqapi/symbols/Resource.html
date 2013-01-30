@@ -205,11 +205,23 @@ ul.inheritsList
 	
 	<li><a href="../symbols/groups.html">groups</a></li>
 	
+	<li><a href="../symbols/Metric.html">Metric</a></li>
+	
+	<li><a href="../symbols/permissions.html">permissions</a></li>
+	
 	<li><a href="../symbols/ResGroup.html">ResGroup</a></li>
 	
 	<li><a href="../symbols/Resource.html">Resource</a></li>
 	
 	<li><a href="../symbols/resources.html">resources</a></li>
+	
+	<li><a href="../symbols/Role.html">Role</a></li>
+	
+	<li><a href="../symbols/roles.html">roles</a></li>
+	
+	<li><a href="../symbols/User.html">User</a></li>
+	
+	<li><a href="../symbols/users.html">users</a></li>
 	
 </ul>
 <hr />
@@ -272,6 +284,17 @@ ul.inheritsList
 						</tr>
 					</thead>
 					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/Resource.html#metrics">metrics</a></b>
+								</div>
+								<div class="description">enumerates metrics available for this resource, returned value is not an array but a hash,
+where name is metric name without spaces</div>
+							</td>
+						</tr>
 					
 						<tr>
 							<td class="attributes">&nbsp;</td>
@@ -361,6 +384,15 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#getMetric">getMetric</a></b>(name)
+								</div>
+								<div class="description">gets a metric by it's name</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/Resource.html#getName">getName</a></b>()
 								</div>
 								<div class="description">gets resource name</div>
@@ -381,7 +413,7 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/Resource.html#getProxy">getProxy</a></b>()
 								</div>
-								<div class="description">returns Resource proxy object</div>
+								<div class="description"></div>
 							</td>
 						</tr>
 					
@@ -425,6 +457,15 @@ timeout is reached or operation finishes</div>
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#scheduleOperation">scheduleOperation</a></b>(name, delay, repeatInterval, repeatCount, opParams)
+								</div>
+								<div class="description">schedules operation on resource.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/Resource.html#toString">toString</a></b>()
 								</div>
 								<div class="description">gets resource String representation</div>
@@ -455,6 +496,15 @@ timeout is reached or operation finishes</div>
 								<div class="fixedFont"><b><a href="../symbols/Resource.html#waitForAvailable">waitForAvailable</a></b>()
 								</div>
 								<div class="description">wait's until resource becomes UP or timeout is reached</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#waitForNotAvailable">waitForNotAvailable</a></b>()
+								</div>
+								<div class="description">wait's until resource becomes DOWN or timeout is reached</div>
 							</td>
 						</tr>
 					
@@ -522,6 +572,33 @@ timeout is reached or operation finishes</div>
 				<div class="sectionTitle">
 					Field Detail
 				</div>
+				
+					<a name="metrics"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/Metric.html">Metric</a>[]}</span>
+					<b>metrics</b>
+					
+					</div>
+					<div class="description">
+						enumerates metrics available for this resource, returned value is not an array but a hash,
+where name is metric name without spaces
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">resource.metrics.totalSwapSpace // get's a metric called 'Total Swap Space'</pre>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
 				
 					<a name="name"> </a>
 					<div class="fixedFont">
@@ -673,7 +750,7 @@ as.createChild({name:"testinterface",type:"Network Interface",config:{"inet-addr
 								<dd>can contain following: -
 <ul>
 <li>name [String] (required)- name for a new resource child, name is optional when `content` is provided</li>
-<li>type [String] (required) - resource type name to be created</li>
+<li>type [String] (required) - resource type name to be created (exact name, not just filter)</li>
 <li>config [Object] (optional) - configuration map for new resource, if not present, default is taken</li>
 <li>pluginConfig [Object] (optional) - plugin configuration for new resource, if not present, default is taken (NOT YET IMPLEMENTED)</li>
 <li>content [String] (optional) - absolute path for resource's content file (typical for deployments)</li>
@@ -786,6 +863,46 @@ as.createChild({name:"testinterface",type:"Network Interface",config:{"inet-addr
 
 					<hr />
 				
+					<a name="getMetric"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/Metric.html">Metric</a>}</span>
+					<b>getMetric</b>(name)
+					
+					</div>
+					<div class="description">
+						gets a metric by it's name
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">resource.getMetric("Total Swap Space")</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>name</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
 					<a name="getName"> </a>
 					<div class="fixedFont">
 					
@@ -851,7 +968,7 @@ as.createChild({name:"testinterface",type:"Network Interface",config:{"inet-addr
 					
 					</div>
 					<div class="description">
-						returns Resource proxy object
+						
 						
 						
 					</div>
@@ -862,6 +979,13 @@ as.createChild({name:"testinterface",type:"Network Interface",config:{"inet-addr
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Resource proxy object</dd>
+							
+							</dl>
 						
 						
 						
@@ -892,13 +1016,13 @@ timeout is reached or operation finishes
 									<span class="light fixedFont">{String}</span> <b>name</b>
 									
 								</dt>
-								<dd>of operation</dd>
+								<dd>of operation (required)</dd>
 							
 								<dt>
 									<span class="light fixedFont">{Object}</span> <b>params</b>
 									
 								</dt>
-								<dd>- hashmap for operation params (Configuration)</dd>
+								<dd>- hashmap for operation params (Configuration) (optional)</dd>
 							
 							</dl>
 						
@@ -909,7 +1033,12 @@ timeout is reached or operation finishes
 							<dl class="detailList">
 							<dt class="heading">Returns:</dt>
 							
-								<dd></dd>
+								<dd>javascript object (hashmap) with following keys:
+<ul>
+<li>status {String} - operation status<li>
+<li>error {String} - operation error message</li>
+<li>result {Object} -  result configuration</li>
+<ul></dd>
 							
 							</dl>
 						
@@ -1000,6 +1129,74 @@ timeout is reached or operation finishes
 							
 								<dd>true if resource no longer exists in inventory, false
          otherwise</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="scheduleOperation"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>scheduleOperation</b>(name, delay, repeatInterval, repeatCount, opParams)
+					
+					</div>
+					<div class="description">
+						schedules operation on resource. In contrast to invokeOperation this is
+not blocking (synchronous) operation.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>name</b>
+									
+								</dt>
+								<dd>of operation (required)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{long}</span> <b>delay</b>
+									
+								</dt>
+								<dd>delay in seconds (required)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{long}</span> <b>repeatInterval</b>
+									
+								</dt>
+								<dd>repeatInterval in seconds (required)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>repeatCount</b>
+									
+								</dt>
+								<dd>repeatCount in seconds (required)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>opParams</b>
+									
+								</dt>
+								<dd>- hashmap for operation params (Configuration) (optional)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd></dd>
 							
 							</dl>
 						
@@ -1139,7 +1336,39 @@ agent.updateConfiguration({'rhq.communications.connector.transport':'sslsocket'}
 							<dl class="detailList">
 							<dt class="heading">Returns:</dt>
 							
-								<dd>true if became is available, false otherwise</dd>
+								<dd>true if resource became or is available, false otherwise</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="waitForNotAvailable"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Boolean}</span>
+					<b>waitForNotAvailable</b>()
+					
+					</div>
+					<div class="description">
+						wait's until resource becomes DOWN or timeout is reached
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>true if resource became or is DOWN, false otherwise</dd>
 							
 							</dl>
 						
@@ -1210,7 +1439,7 @@ agent.updateConfiguration({'rhq.communications.connector.transport':'sslsocket'}
 <!-- ============================== footer ================================= -->
 		<div class="fineprint" style="clear:both">
 			
-			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Oct 30 2012 13:07:32 GMT+0100 (CET)
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Wed Jan 30 2013 14:09:19 GMT+0100 (CET)
 		</div>
 	</body>
 </html>

@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - discoveryQueue</title>
+		<title>JsDoc Reference - Metric</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -232,7 +232,7 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace discoveryQueue
+				Class Metric
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
@@ -240,7 +240,7 @@ ul.inheritsList
 				
 				
 			
-				provides access to discovery queue
+				
 				
 				
 					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_automatjon_jon_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
@@ -249,8 +249,8 @@ ul.inheritsList
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class discoveryQueue.">
-				<caption>Namespace Summary</caption>
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class Metric.">
+				<caption>Class Summary</caption>
 				<thead>
 					<tr>
 						<th scope="col">Constructor Attributes</th>
@@ -262,9 +262,9 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/discoveryQueue.html#constructor">discoveryQueue</a></b>
+								<b><a href="../symbols/Metric.html#constructor">Metric</a></b>()
 							</div>
-							<div class="description"></div>
+							<div class="description">creates a new instance of Metric</div>
 						</td>
 					</tr>
 				</tbody>
@@ -278,7 +278,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class discoveryQueue.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class Metric.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -289,47 +289,20 @@ ul.inheritsList
 					<tbody>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.importPlatform">importPlatform</a></b>(name, children)
+								<div class="fixedFont"><b><a href="../symbols/Metric.html#getLiveValue">getLiveValue</a></b>()
 								</div>
-								<div class="description">imports platform by name</div>
+								<div class="description">gets live value for metric</div>
 							</td>
 						</tr>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.importResource">importResource</a></b>(resource, children)
+								<div class="fixedFont"><b><a href="../symbols/Metric.html#set">set</a></b>(enabled, interval)
 								</div>
-								<div class="description">imports resource</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.importResources">importResources</a></b>(param)
-								</div>
-								<div class="description">imports all resources found in discovery queue</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.list">list</a></b>(params)
-								</div>
-								<div class="description">lists discovery queue</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.listPlatforms">listPlatforms</a></b>(params)
-								</div>
-								<div class="description">lists platforms from discovery queue</div>
+								<div class="description">enables/disables metric and sets its collection interval</div>
 							</td>
 						</tr>
 					
@@ -346,15 +319,15 @@ ul.inheritsList
 			
 			<div class="details"><a name="constructor"> </a>
 				<div class="sectionTitle">
-					Namespace Detail
+					Class Detail
 				</div>
 				
 				<div class="fixedFont">
-						<b>discoveryQueue</b>
+						<b>Metric</b>()
 				</div>
 				
 				<div class="description">
-					
+					creates a new instance of Metric
 					
 				</div>
 				
@@ -381,38 +354,21 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name=".importPlatform"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="getLiveValue"> </a>
+					<div class="fixedFont">
 					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>}</span>
-					<span class="light">discoveryQueue.</span><b>importPlatform</b>(name, children)
+					<span class="light">{String}</span>
+					<b>getLiveValue</b>()
 					
 					</div>
 					<div class="description">
-						imports platform by name
+						gets live value for metric
 						
 						
 					</div>
 					
 					
 					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<span class="light fixedFont">{String}</span> <b>name</b>
-									
-								</dt>
-								<dd>- platform name to be imported</dd>
-							
-								<dt>
-									<span class="light fixedFont">{Booolean}</span> <b>children</b>
-									
-								</dt>
-								<dd>- if true (default) import also all child resources</dd>
-							
-							</dl>
 						
 						
 						
@@ -421,7 +377,7 @@ ul.inheritsList
 							<dl class="detailList">
 							<dt class="heading">Returns:</dt>
 							
-								<dd>platform resource</dd>
+								<dd>String whatever the value is</dd>
 							
 							</dl>
 						
@@ -430,15 +386,15 @@ ul.inheritsList
 
 					<hr />
 				
-					<a name=".importResource"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="set"> </a>
+					<div class="fixedFont">
 					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>}</span>
-					<span class="light">discoveryQueue.</span><b>importResource</b>(resource, children)
+					
+					<b>set</b>(enabled, interval)
 					
 					</div>
 					<div class="description">
-						imports resource
+						enables/disables metric and sets its collection interval
 						
 						
 					</div>
@@ -450,145 +406,22 @@ ul.inheritsList
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<span class="light fixedFont">{<a href="../symbols/Resource.html">Resource</a>}</span> <b>resource</b>
+									<b>enabled</b>
 									
 								</dt>
-								<dd>or ID - to be imported</dd>
+								<dd>{Boolean} - enable or disable metric</dd>
 							
 								<dt>
-									<span class="light fixedFont">{Booolean}</span> <b>children</b>
+									<b>interval</b>
 									
 								</dt>
-								<dd>- if true (default) import also all child resources
-           (if any)</dd>
+								<dd>{Number} - optinally set collection interval (seconds)</dd>
 							
 							</dl>
 						
 						
 						
 						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".importResources"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>[]}</span>
-					<span class="light">discoveryQueue.</span><b>importResources</b>(param)
-					
-					</div>
-					<div class="description">
-						imports all resources found in discovery queue
-						
-						
-					</div>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<b>param</b>
-									
-								</dt>
-								<dd>- filter resources being imported similar to <a href="../symbols/resources.html#.find">resources.find</a>()</dd>
-							
-							</dl>
-						
-						
-						
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".list"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>[]}</span>
-					<span class="light">discoveryQueue.</span><b>list</b>(params)
-					
-					</div>
-					<div class="description">
-						lists discovery queue
-						
-						
-					</div>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<span class="light fixedFont">{Object}</span> <b>params</b>
-									
-								</dt>
-								<dd>- filter</dd>
-							
-							</dl>
-						
-						
-						
-						
-						
-							<dl class="detailList">
-							<dt class="heading">Returns:</dt>
-							
-								<dd>Array of resources in discovery queue matching given filter</dd>
-							
-							</dl>
-						
-						
-						
-
-					<hr />
-				
-					<a name=".listPlatforms"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>[]}</span>
-					<span class="light">discoveryQueue.</span><b>listPlatforms</b>(params)
-					
-					</div>
-					<div class="description">
-						lists platforms from discovery queue
-						
-						
-					</div>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<span class="light fixedFont">{Object}</span> <b>params</b>
-									
-								</dt>
-								<dd>- filter</dd>
-							
-							</dl>
-						
-						
-						
-						
-						
-							<dl class="detailList">
-							<dt class="heading">Returns:</dt>
-							
-								<dd>Array of platforms in discovery queue matching given filter</dd>
-							
-							</dl>
 						
 						
 						

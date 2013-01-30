@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - discoveryQueue</title>
+		<title>JsDoc Reference - permissions</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -232,7 +232,7 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace discoveryQueue
+				Namespace permissions
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
@@ -240,7 +240,7 @@ ul.inheritsList
 				
 				
 			
-				provides access to discovery queue
+				provides access to all available permissions
 				
 				
 					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_automatjon_jon_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
@@ -249,7 +249,7 @@ ul.inheritsList
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class discoveryQueue.">
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class permissions.">
 				<caption>Namespace Summary</caption>
 				<thead>
 					<tr>
@@ -262,7 +262,7 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/discoveryQueue.html#constructor">discoveryQueue</a></b>
+								<b><a href="../symbols/permissions.html#constructor">permissions</a></b>
 							</div>
 							<div class="description"></div>
 						</td>
@@ -273,12 +273,60 @@ ul.inheritsList
 
 <!-- ============================== properties summary ===================== -->
 			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class permissions.">
+					<caption>Field Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Field Attributes</th>
+							<th scope="col">Field Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								permissions.<b><a href="../symbols/permissions.html#.all">all</a></b>
+								</div>
+								<div class="description">All available permission names</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								permissions.<b><a href="../symbols/permissions.html#.allGlobal">allGlobal</a></b>
+								</div>
+								<div class="description">All available global (global permissions do not apply to specific resources in groups) permission names</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								permissions.<b><a href="../symbols/permissions.html#.allResource">allResource</a></b>
+								</div>
+								<div class="description">All available resource (resource permissions apply only to the resources in the role's groups) permission names</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
 
 <!-- ============================== methods summary ======================== -->
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class discoveryQueue.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class permissions.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -291,45 +339,9 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.importPlatform">importPlatform</a></b>(name, children)
+								<div class="fixedFont">permissions.<b><a href="../symbols/permissions.html#.printAllPermissions">printAllPermissions</a></b>()
 								</div>
-								<div class="description">imports platform by name</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.importResource">importResource</a></b>(resource, children)
-								</div>
-								<div class="description">imports resource</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.importResources">importResources</a></b>(param)
-								</div>
-								<div class="description">imports all resources found in discovery queue</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.list">list</a></b>(params)
-								</div>
-								<div class="description">lists discovery queue</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.listPlatforms">listPlatforms</a></b>(params)
-								</div>
-								<div class="description">lists platforms from discovery queue</div>
+								<div class="description">Prints names and types of all permissions</div>
 							</td>
 						</tr>
 					
@@ -350,7 +362,7 @@ ul.inheritsList
 				</div>
 				
 				<div class="fixedFont">
-						<b>discoveryQueue</b>
+						<b>permissions</b>
 				</div>
 				
 				<div class="description">
@@ -374,6 +386,77 @@ ul.inheritsList
 
 <!-- ============================== field details ========================== -->		
 			
+				<div class="sectionTitle">
+					Field Detail
+				</div>
+				
+					<a name=".all"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{String[]}</span>
+					<span class="light">permissions.</span><b>all</b>
+					
+					</div>
+					<div class="description">
+						All available permission names
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".allGlobal"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{String[]}</span>
+					<span class="light">permissions.</span><b>allGlobal</b>
+					
+					</div>
+					<div class="description">
+						All available global (global permissions do not apply to specific resources in groups) permission names
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".allResource"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{String[]}</span>
+					<span class="light">permissions.</span><b>allResource</b>
+					
+					</div>
+					<div class="description">
+						All available resource (resource permissions apply only to the resources in the role's groups) permission names
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					
+				
+			
 
 <!-- ============================== method details ========================= -->		
 			
@@ -381,15 +464,15 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name=".importPlatform"> </a>
+					<a name=".printAllPermissions"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>}</span>
-					<span class="light">discoveryQueue.</span><b>importPlatform</b>(name, children)
+					
+					<span class="light">permissions.</span><b>printAllPermissions</b>()
 					
 					</div>
 					<div class="description">
-						imports platform by name
+						Prints names and types of all permissions
 						
 						
 					</div>
@@ -397,198 +480,9 @@ ul.inheritsList
 					
 					
 						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<span class="light fixedFont">{String}</span> <b>name</b>
-									
-								</dt>
-								<dd>- platform name to be imported</dd>
-							
-								<dt>
-									<span class="light fixedFont">{Booolean}</span> <b>children</b>
-									
-								</dt>
-								<dd>- if true (default) import also all child resources</dd>
-							
-							</dl>
 						
 						
 						
-						
-						
-							<dl class="detailList">
-							<dt class="heading">Returns:</dt>
-							
-								<dd>platform resource</dd>
-							
-							</dl>
-						
-						
-						
-
-					<hr />
-				
-					<a name=".importResource"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>}</span>
-					<span class="light">discoveryQueue.</span><b>importResource</b>(resource, children)
-					
-					</div>
-					<div class="description">
-						imports resource
-						
-						
-					</div>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<span class="light fixedFont">{<a href="../symbols/Resource.html">Resource</a>}</span> <b>resource</b>
-									
-								</dt>
-								<dd>or ID - to be imported</dd>
-							
-								<dt>
-									<span class="light fixedFont">{Booolean}</span> <b>children</b>
-									
-								</dt>
-								<dd>- if true (default) import also all child resources
-           (if any)</dd>
-							
-							</dl>
-						
-						
-						
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".importResources"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>[]}</span>
-					<span class="light">discoveryQueue.</span><b>importResources</b>(param)
-					
-					</div>
-					<div class="description">
-						imports all resources found in discovery queue
-						
-						
-					</div>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<b>param</b>
-									
-								</dt>
-								<dd>- filter resources being imported similar to <a href="../symbols/resources.html#.find">resources.find</a>()</dd>
-							
-							</dl>
-						
-						
-						
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".list"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>[]}</span>
-					<span class="light">discoveryQueue.</span><b>list</b>(params)
-					
-					</div>
-					<div class="description">
-						lists discovery queue
-						
-						
-					</div>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<span class="light fixedFont">{Object}</span> <b>params</b>
-									
-								</dt>
-								<dd>- filter</dd>
-							
-							</dl>
-						
-						
-						
-						
-						
-							<dl class="detailList">
-							<dt class="heading">Returns:</dt>
-							
-								<dd>Array of resources in discovery queue matching given filter</dd>
-							
-							</dl>
-						
-						
-						
-
-					<hr />
-				
-					<a name=".listPlatforms"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>[]}</span>
-					<span class="light">discoveryQueue.</span><b>listPlatforms</b>(params)
-					
-					</div>
-					<div class="description">
-						lists platforms from discovery queue
-						
-						
-					</div>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<span class="light fixedFont">{Object}</span> <b>params</b>
-									
-								</dt>
-								<dd>- filter</dd>
-							
-							</dl>
-						
-						
-						
-						
-						
-							<dl class="detailList">
-							<dt class="heading">Returns:</dt>
-							
-								<dd>Array of platforms in discovery queue matching given filter</dd>
-							
-							</dl>
 						
 						
 						

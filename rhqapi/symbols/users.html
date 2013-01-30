@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - discoveryQueue</title>
+		<title>JsDoc Reference - users</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -232,7 +232,7 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace discoveryQueue
+				Namespace users
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
@@ -240,7 +240,7 @@ ul.inheritsList
 				
 				
 			
-				provides access to discovery queue
+				provides access to users
 				
 				
 					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_automatjon_jon_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
@@ -249,7 +249,7 @@ ul.inheritsList
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class discoveryQueue.">
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class users.">
 				<caption>Namespace Summary</caption>
 				<thead>
 					<tr>
@@ -262,7 +262,7 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/discoveryQueue.html#constructor">discoveryQueue</a></b>
+								<b><a href="../symbols/users.html#constructor">users</a></b>
 							</div>
 							<div class="description"></div>
 						</td>
@@ -278,7 +278,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class discoveryQueue.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class users.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -291,45 +291,54 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.importPlatform">importPlatform</a></b>(name, children)
+								<div class="fixedFont">users.<b><a href="../symbols/users.html#.addUser">addUser</a></b>(params, password)
 								</div>
-								<div class="description">imports platform by name</div>
+								<div class="description">Creates a new user acorrding to given parameters.</div>
 							</td>
 						</tr>
 					
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.importResource">importResource</a></b>(resource, children)
+								<div class="fixedFont">users.<b><a href="../symbols/users.html#.deleteUsers">deleteUsers</a></b>(userNames)
 								</div>
-								<div class="description">imports resource</div>
+								<div class="description">Deletes given user.</div>
 							</td>
 						</tr>
 					
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.importResources">importResources</a></b>(param)
+								<div class="fixedFont">users.<b><a href="../symbols/users.html#.findUsers">findUsers</a></b>(params)
 								</div>
-								<div class="description">imports all resources found in discovery queue</div>
+								<div class="description">Finds all users according to given parameters.</div>
 							</td>
 						</tr>
 					
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.list">list</a></b>(params)
+								<div class="fixedFont">users.<b><a href="../symbols/users.html#.getAllUsers">getAllUsers</a></b>()
 								</div>
-								<div class="description">lists discovery queue</div>
+								<div class="description">Gets all available users.</div>
 							</td>
 						</tr>
 					
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">discoveryQueue.<b><a href="../symbols/discoveryQueue.html#.listPlatforms">listPlatforms</a></b>(params)
+								<div class="fixedFont">users.<b><a href="../symbols/users.html#.getUser">getUser</a></b>(userName)
 								</div>
-								<div class="description">lists platforms from discovery queue</div>
+								<div class="description">Gets a given user.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">users.<b><a href="../symbols/users.html#.printValidParams">printValidParams</a></b>()
+								</div>
+								<div class="description">Prints all valid accepted parameters</div>
 							</td>
 						</tr>
 					
@@ -350,7 +359,7 @@ ul.inheritsList
 				</div>
 				
 				<div class="fixedFont">
-						<b>discoveryQueue</b>
+						<b>users</b>
 				</div>
 				
 				<div class="description">
@@ -381,18 +390,22 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name=".importPlatform"> </a>
+					<a name=".addUser"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>}</span>
-					<span class="light">discoveryQueue.</span><b>importPlatform</b>(name, children)
+					<span class="light">{<a href="../symbols/User.html">User</a>}</span>
+					<span class="light">users.</span><b>addUser</b>(params, password)
 					
 					</div>
 					<div class="description">
-						imports platform by name
+						Creates a new user acorrding to given parameters.
 						
 						
 					</div>
+					
+					
+					
+					<pre class="code">users.addUser({firstName:"John",lastName:"Rambo",name:"jrambo",password:"passw",roles:["boss","admin"]);</pre>
 					
 					
 					
@@ -401,16 +414,16 @@ ul.inheritsList
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<span class="light fixedFont">{String}</span> <b>name</b>
+									<span class="light fixedFont">{Object}</span> <b>params</b>
 									
 								</dt>
-								<dd>- platform name to be imported</dd>
+								<dd>- see users.validParams for available params.</dd>
 							
 								<dt>
-									<span class="light fixedFont">{Booolean}</span> <b>children</b>
+									<span class="light fixedFont">{string}</span> <b>password</b>
 									
 								</dt>
-								<dd>- if true (default) import also all child resources</dd>
+								<dd></dd>
 							
 							</dl>
 						
@@ -421,7 +434,7 @@ ul.inheritsList
 							<dl class="detailList">
 							<dt class="heading">Returns:</dt>
 							
-								<dd>platform resource</dd>
+								<dd><span class="light fixedFont">{<a href="../symbols/User.html">User</a>}</span> a newly created user</dd>
 							
 							</dl>
 						
@@ -430,18 +443,22 @@ ul.inheritsList
 
 					<hr />
 				
-					<a name=".importResource"> </a>
+					<a name=".deleteUsers"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>}</span>
-					<span class="light">discoveryQueue.</span><b>importResource</b>(resource, children)
+					
+					<span class="light">users.</span><b>deleteUsers</b>(userNames)
 					
 					</div>
 					<div class="description">
-						imports resource
+						Deletes given user.
 						
 						
 					</div>
+					
+					
+					
+					<pre class="code">users.deleteUsers(["jrambo"]);</pre>
 					
 					
 					
@@ -450,17 +467,10 @@ ul.inheritsList
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<span class="light fixedFont">{<a href="../symbols/Resource.html">Resource</a>}</span> <b>resource</b>
+									<span class="light fixedFont">{String[]}</span> <b>userNames</b>
 									
 								</dt>
-								<dd>or ID - to be imported</dd>
-							
-								<dt>
-									<span class="light fixedFont">{Booolean}</span> <b>children</b>
-									
-								</dt>
-								<dd>- if true (default) import also all child resources
-           (if any)</dd>
+								<dd>- array with names of users to delete</dd>
 							
 							</dl>
 						
@@ -473,51 +483,15 @@ ul.inheritsList
 
 					<hr />
 				
-					<a name=".importResources"> </a>
+					<a name=".findUsers"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>[]}</span>
-					<span class="light">discoveryQueue.</span><b>importResources</b>(param)
+					<span class="light">{Users[]}</span>
+					<span class="light">users.</span><b>findUsers</b>(params)
 					
 					</div>
 					<div class="description">
-						imports all resources found in discovery queue
-						
-						
-					</div>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<b>param</b>
-									
-								</dt>
-								<dd>- filter resources being imported similar to <a href="../symbols/resources.html#.find">resources.find</a>()</dd>
-							
-							</dl>
-						
-						
-						
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".list"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>[]}</span>
-					<span class="light">discoveryQueue.</span><b>list</b>(params)
-					
-					</div>
-					<div class="description">
-						lists discovery queue
+						Finds all users according to given parameters.
 						
 						
 					</div>
@@ -532,7 +506,7 @@ ul.inheritsList
 									<span class="light fixedFont">{Object}</span> <b>params</b>
 									
 								</dt>
-								<dd>- filter</dd>
+								<dd>-  see SubjectCriteria.addFilter[param] methods for available params</dd>
 							
 							</dl>
 						
@@ -543,7 +517,7 @@ ul.inheritsList
 							<dl class="detailList">
 							<dt class="heading">Returns:</dt>
 							
-								<dd>Array of resources in discovery queue matching given filter</dd>
+								<dd>Array of found users.</dd>
 							
 							</dl>
 						
@@ -552,15 +526,47 @@ ul.inheritsList
 
 					<hr />
 				
-					<a name=".listPlatforms"> </a>
+					<a name=".getAllUsers"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					<span class="light">{<a href="../symbols/Resource.html">Resource</a>[]}</span>
-					<span class="light">discoveryQueue.</span><b>listPlatforms</b>(params)
+					<span class="light">{<a href="../symbols/User.html">User</a>[]}</span>
+					<span class="light">users.</span><b>getAllUsers</b>()
 					
 					</div>
 					<div class="description">
-						lists platforms from discovery queue
+						Gets all available users.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Array of found users.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".getUser"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{<a href="../symbols/User.html">User</a>}</span>
+					<span class="light">users.</span><b>getUser</b>(userName)
+					
+					</div>
+					<div class="description">
+						Gets a given user. Returns found user or null.
 						
 						
 					</div>
@@ -572,10 +578,10 @@ ul.inheritsList
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<span class="light fixedFont">{Object}</span> <b>params</b>
+									<span class="light fixedFont">{string}</span> <b>userName</b>
 									
 								</dt>
-								<dd>- filter</dd>
+								<dd>- name of the user</dd>
 							
 							</dl>
 						
@@ -586,9 +592,34 @@ ul.inheritsList
 							<dl class="detailList">
 							<dt class="heading">Returns:</dt>
 							
-								<dd>Array of platforms in discovery queue matching given filter</dd>
+								<dd><span class="light fixedFont">{<a href="../symbols/User.html">User</a>}</span> a found user or null</dd>
 							
 							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".printValidParams"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">users.</span><b>printValidParams</b>()
+					
+					</div>
+					<div class="description">
+						Prints all valid accepted parameters
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
 						
 						
 						
