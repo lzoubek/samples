@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - permissions</title>
+		<title>JsDoc Reference - drifts</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -266,7 +266,7 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace permissions
+				Namespace drifts
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
@@ -274,7 +274,7 @@ ul.inheritsList
 				
 				
 			
-				provides access to all available permissions
+				Provides access to drift subsystem
 				
 				
 					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_jon-tests_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
@@ -283,7 +283,7 @@ ul.inheritsList
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class permissions.">
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class drifts.">
 				<caption>Namespace Summary</caption>
 				<thead>
 					<tr>
@@ -296,7 +296,7 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/permissions.html#constructor">permissions</a></b>
+								<b><a href="../symbols/drifts.html#constructor">drifts</a></b>
 							</div>
 							<div class="description"></div>
 						</td>
@@ -307,60 +307,12 @@ ul.inheritsList
 
 <!-- ============================== properties summary ===================== -->
 			
-				
-				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class permissions.">
-					<caption>Field Summary</caption>
-					<thead>
-						<tr>
-							<th scope="col">Field Attributes</th>
-							<th scope="col">Field Name and Description</th>
-						</tr>
-					</thead>
-					<tbody>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.all">all</a></b>
-								</div>
-								<div class="description">All available permission names</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.allGlobal">allGlobal</a></b>
-								</div>
-								<div class="description">All available global (global permissions do not apply to specific resources in groups) permission names</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.allResource">allResource</a></b>
-								</div>
-								<div class="description">All available resource (resource permissions apply only to the resources in the role's groups) permission names</div>
-							</td>
-						</tr>
-					
-					</tbody>
-				</table>
-				
-				
-				
-			
 
 <!-- ============================== methods summary ======================== -->
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class permissions.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class drifts.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -373,9 +325,18 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">permissions.<b><a href="../symbols/permissions.html#.printAllPermissions">printAllPermissions</a></b>()
+								<div class="fixedFont">drifts.<b><a href="../symbols/drifts.html#.findDriftDefinition">findDriftDefinition</a></b>(params)
 								</div>
-								<div class="description">Prints names and types of all permissions</div>
+								<div class="description">Finds drift definitions according to given parameters.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">drifts.<b><a href="../symbols/drifts.html#.findDriftDefinitionTemplates">findDriftDefinitionTemplates</a></b>(params)
+								</div>
+								<div class="description">Finds drift definition templates according to given parameters.</div>
 							</td>
 						</tr>
 					
@@ -396,7 +357,7 @@ ul.inheritsList
 				</div>
 				
 				<div class="fixedFont">
-						<b>permissions</b>
+						<b>drifts</b>
 				</div>
 				
 				<div class="description">
@@ -420,77 +381,6 @@ ul.inheritsList
 
 <!-- ============================== field details ========================== -->		
 			
-				<div class="sectionTitle">
-					Field Detail
-				</div>
-				
-					<a name=".all"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>all</b>
-					
-					</div>
-					<div class="description">
-						All available permission names
-						
-						
-					</div>
-					
-					
-
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".allGlobal"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>allGlobal</b>
-					
-					</div>
-					<div class="description">
-						All available global (global permissions do not apply to specific resources in groups) permission names
-						
-						
-					</div>
-					
-					
-
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".allResource"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>allResource</b>
-					
-					</div>
-					<div class="description">
-						All available resource (resource permissions apply only to the resources in the role's groups) permission names
-						
-						
-					</div>
-					
-					
-
-						
-						
-						
-						
-
-					
-				
-			
 
 <!-- ============================== method details ========================= -->		
 			
@@ -498,25 +388,94 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name=".printAllPermissions"> </a>
+					<a name=".findDriftDefinition"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					
-					<span class="light">permissions.</span><b>printAllPermissions</b>()
+					<span class="light">{<a href="../symbols/DriftDefinition.html">DriftDefinition</a>[]}</span>
+					<span class="light">drifts.</span><b>findDriftDefinition</b>(params)
 					
 					</div>
 					<div class="description">
-						Prints names and types of all permissions
+						Finds drift definitions according to given parameters.
 						
 						
 					</div>
 					
 					
 					
+					<pre class="code">drifts.findDriftDefinition({name:"testDriftDefinition"});</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>params</b>
+									
+								</dt>
+								<dd>- see DriftDefinitionCriteria.addFilter[param] methods for available params.</dd>
+							
+							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>array of drift definitions</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".findDriftDefinitionTemplates"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{<a href="../symbols/DriftDefinitionTemplate.html">DriftDefinitionTemplate</a>[]}</span>
+					<span class="light">drifts.</span><b>findDriftDefinitionTemplates</b>(params)
+					
+					</div>
+					<div class="description">
+						Finds drift definition templates according to given parameters.
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">drifts.findDriftDefinitionTemplates({resourceTypeId:1});</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>params</b>
+									
+								</dt>
+								<dd>- see DriftDefinitionTemplateCriteria.addFilter[param] methods for available params.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>array of drift definition templates</dd>
+							
+							</dl>
 						
 						
 						

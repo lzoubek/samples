@@ -191,6 +191,14 @@ ul.inheritsList
 	
 	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
 	
+	<li><a href="../symbols/Alert.html">Alert</a></li>
+	
+	<li><a href="../symbols/AlertDefinition.html">AlertDefinition</a></li>
+	
+	<li><a href="../symbols/AlertDefinition-Condition.html">AlertDefinition-Condition</a></li>
+	
+	<li><a href="../symbols/alertDefinitions.html">alertDefinitions</a></li>
+	
 	<li><a href="../symbols/Bundle.html">Bundle</a></li>
 	
 	<li><a href="../symbols/Bundle-Deployment.html">Bundle-Deployment</a></li>
@@ -199,13 +207,31 @@ ul.inheritsList
 	
 	<li><a href="../symbols/Bundle-Version.html">Bundle-Version</a></li>
 	
+	<li><a href="../symbols/BundleGroup.html">BundleGroup</a></li>
+	
+	<li><a href="../symbols/bundleGroups.html">bundleGroups</a></li>
+	
 	<li><a href="../symbols/bundles.html">bundles</a></li>
 	
 	<li><a href="../symbols/discoveryQueue.html">discoveryQueue</a></li>
 	
+	<li><a href="../symbols/DriftDefinition.html">DriftDefinition</a></li>
+	
+	<li><a href="../symbols/DriftDefinitionTemplate.html">DriftDefinitionTemplate</a></li>
+	
+	<li><a href="../symbols/drifts.html">drifts</a></li>
+	
+	<li><a href="../symbols/DynaGroupDefinition.html">DynaGroupDefinition</a></li>
+	
+	<li><a href="../symbols/dynaGroupDefinitions.html">dynaGroupDefinitions</a></li>
+	
 	<li><a href="../symbols/groups.html">groups</a></li>
 	
 	<li><a href="../symbols/Metric.html">Metric</a></li>
+	
+	<li><a href="../symbols/metricsTemplates.html">metricsTemplates</a></li>
+	
+	<li><a href="../symbols/metricsTemplates.predicates.html">metricsTemplates.predicates</a></li>
 	
 	<li><a href="../symbols/permissions.html">permissions</a></li>
 	
@@ -215,9 +241,17 @@ ul.inheritsList
 	
 	<li><a href="../symbols/resources.html">resources</a></li>
 	
+	<li><a href="../symbols/ResourceType.html">ResourceType</a></li>
+	
+	<li><a href="../symbols/resourceTypes.html">resourceTypes</a></li>
+	
 	<li><a href="../symbols/Role.html">Role</a></li>
 	
 	<li><a href="../symbols/roles.html">roles</a></li>
+	
+	<li><a href="../symbols/StorageNode.html">StorageNode</a></li>
+	
+	<li><a href="../symbols/storageNodes.html">storageNodes</a></li>
 	
 	<li><a href="../symbols/User.html">User</a></li>
 	
@@ -243,7 +277,7 @@ ul.inheritsList
 				
 				
 				
-					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_automatjon_jon_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
+					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_jon-tests_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
 				
 			</p>
 
@@ -326,6 +360,24 @@ where name is metric name without spaces</div>
 						</tr>
 					</thead>
 					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#alertDefinitons">alertDefinitons</a></b>(params)
+								</div>
+								<div class="description">gets alert definitions for this resource</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#checkOperation">checkOperation</a></b>(name, opParams)
+								</div>
+								<div class="description">Checks that given operation with given parameters is valid on this resource.</div>
+							</td>
+						</tr>
 					
 						<tr>
 							<td class="attributes">&nbsp;</td>
@@ -420,6 +472,15 @@ where name is metric name without spaces</div>
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#getResourceTypeId">getResourceTypeId</a></b>()
+								</div>
+								<div class="description">gets resource type id</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/Resource.html#invokeOperation">invokeOperation</a></b>(name, params)
 								</div>
 								<div class="description">invokes operation on resource, operation status is polled 'till
@@ -466,6 +527,15 @@ timeout is reached or operation finishes</div>
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#scheduleOperationUsingCron">scheduleOperationUsingCron</a></b>(name, cronExpression, opParams)
+								</div>
+								<div class="description">schedules operation on resource using crone expression.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/Resource.html#toString">toString</a></b>()
 								</div>
 								<div class="description">gets resource String representation</div>
@@ -484,9 +554,27 @@ timeout is reached or operation finishes</div>
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#update">update</a></b>(params)
+								</div>
+								<div class="description">Update resource's editable properties (name, description, location).</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/Resource.html#updateConfiguration">updateConfiguration</a></b>(params)
 								</div>
 								<div class="description">updates configuration of this resource.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#updatePluginConfiguration">updatePluginConfiguration</a></b>(params)
+								</div>
+								<div class="description">updates plugin configuration (Connection settings) of this resource.</div>
 							</td>
 						</tr>
 					
@@ -502,6 +590,16 @@ timeout is reached or operation finishes</div>
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#waitForChild">waitForChild</a></b>(-)
+								</div>
+								<div class="description">wait's until given child resource exists (useful when you
+need to wait for discovery)</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/Resource.html#waitForNotAvailable">waitForNotAvailable</a></b>()
 								</div>
 								<div class="description">wait's until resource becomes DOWN or timeout is reached</div>
@@ -511,7 +609,7 @@ timeout is reached or operation finishes</div>
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont"><b><a href="../symbols/Resource.html#waitForOperationResult">waitForOperationResult</a></b>(resourceId, resOpShedule)
+								<div class="fixedFont"><b><a href="../symbols/Resource.html#waitForOperationResult">waitForOperationResult</a></b>(resOpShedule)
 								</div>
 								<div class="description">Waits until operation is finished or timeout is reached.</div>
 							</td>
@@ -629,6 +727,99 @@ where name is metric name without spaces
 				<div class="sectionTitle">
 					Method Detail
 				</div>
+				
+					<a name="alertDefinitons"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/AlertDefinition.html">AlertDefinition</a>[]}</span>
+					<b>alertDefinitons</b>(params)
+					
+					</div>
+					<div class="description">
+						gets alert definitions for this resource
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>params</b>
+									
+								</dt>
+								<dd>- you can filter alert definitions same as in <a href="../symbols/alertDefinitions.html#.find">alertDefinitions.find</a>() function</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>array of alert definitions</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="checkOperation"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>checkOperation</b>(name, opParams)
+					
+					</div>
+					<div class="description">
+						Checks that given operation with given parameters is valid on this resource.
+Default parameters are used when ommited.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>name</b>
+									
+								</dt>
+								<dd>of operation (required)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>opParams</b>
+									
+								</dt>
+								<dd>- hashmap for operation params (Configuration) (optional)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>checked configuration</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
 				
 					<a name="child"> </a>
 					<div class="fixedFont">
@@ -951,7 +1142,7 @@ as.createChild({name:"testinterface",type:"Network Interface",config:{"inet-addr
 							<dl class="detailList">
 							<dt class="heading">Returns:</dt>
 							
-								<dd></dd>
+								<dd>plugin configuration object (Connection settings)</dd>
 							
 							</dl>
 						
@@ -986,6 +1177,31 @@ as.createChild({name:"testinterface",type:"Network Interface",config:{"inet-addr
 								<dd>Resource proxy object</dd>
 							
 							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getResourceTypeId"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Number}</span>
+					<b>getResourceTypeId</b>()
+					
+					</div>
+					<div class="description">
+						gets resource type id
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
 						
 						
 						
@@ -1193,12 +1409,54 @@ not blocking (synchronous) operation.
 						
 						
 						
+						
+						
+
+					<hr />
+				
+					<a name="scheduleOperationUsingCron"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>scheduleOperationUsingCron</b>(name, cronExpression, opParams)
+					
+					</div>
+					<div class="description">
+						schedules operation on resource using crone expression. In contrast to invokeOperation this is 
+not blocking (synchronous) operation.
+						
+						
+					</div>
+					
+					
+					
+						
 							<dl class="detailList">
-							<dt class="heading">Returns:</dt>
+							<dt class="heading">Parameters:</dt>
 							
-								<dd></dd>
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>name</b>
+									
+								</dt>
+								<dd>of operation (required)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>cronExpression</b>
+									
+								</dt>
+								<dd>(required)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>opParams</b>
+									
+								</dt>
+								<dd>- hashmap for operation params (Configuration) (optional)</dd>
 							
 							</dl>
+						
+						
+						
+						
 						
 						
 						
@@ -1263,6 +1521,53 @@ not blocking (synchronous) operation.
 
 					<hr />
 				
+					<a name="update"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/Resource.html">Resource</a>}</span>
+					<b>update</b>(params)
+					
+					</div>
+					<div class="description">
+						Update resource's editable properties (name, description, location).
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">new Resource(12345).update({name:"new name",description:"new description",location:"new location"})</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>params</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>updated Resource</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
 					<a name="updateConfiguration"> </a>
 					<div class="fixedFont">
 					
@@ -1282,6 +1587,56 @@ needs to be changed
 					
 					<pre class="code">// to switch agent resource to ssl socket
 agent.updateConfiguration({'rhq.communications.connector.transport':'sslsocket'});</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>params</b>
+									
+								</dt>
+								<dd>- new configuration parameters, partial configuration is supported</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>True if configuration was updated</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="updatePluginConfiguration"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Boolean}</span>
+					<b>updatePluginConfiguration</b>(params)
+					
+					</div>
+					<div class="description">
+						updates plugin configuration (Connection settings) of this resource.  You can either pass whole
+configuration (retrieved by Resource.getPluginConfiguration()) or only params that
+needs to be changed
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">// set new start script arguments for as7
+as7.updatePluginConfiguration({'startScriptArgs':'-Djboss.server.base.dir=foo'});</pre>
 					
 					
 					
@@ -1345,6 +1700,51 @@ agent.updateConfiguration({'rhq.communications.connector.transport':'sslsocket'}
 
 					<hr />
 				
+					<a name="waitForChild"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/Resource.html">Resource</a>}</span>
+					<b>waitForChild</b>(-)
+					
+					</div>
+					<div class="description">
+						wait's until given child resource exists (useful when you
+need to wait for discovery)
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>-</b>
+									
+								</dt>
+								<dd>you can filter child resources same way as in
+           <a href="../symbols/resources.html#.find">resources.find</a>() function</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>first matchin child resource found</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
 					<a name="waitForNotAvailable"> </a>
 					<div class="fixedFont">
 					
@@ -1381,7 +1781,7 @@ agent.updateConfiguration({'rhq.communications.connector.transport':'sslsocket'}
 					<div class="fixedFont">
 					
 					
-					<b>waitForOperationResult</b>(resourceId, resOpShedule)
+					<b>waitForOperationResult</b>(resOpShedule)
 					
 					</div>
 					<div class="description">
@@ -1397,16 +1797,10 @@ agent.updateConfiguration({'rhq.communications.connector.transport':'sslsocket'}
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<b>resourceId</b>
-									
-								</dt>
-								<dd></dd>
-							
-								<dt>
 									<b>resOpShedule</b>
 									
 								</dt>
-								<dd>may be null, than the most recent job for given resourceId
+								<dd>may be null, than the most recent job for this resource
            is picked</dd>
 							
 							</dl>
@@ -1439,7 +1833,7 @@ agent.updateConfiguration({'rhq.communications.connector.transport':'sslsocket'}
 <!-- ============================== footer ================================= -->
 		<div class="fineprint" style="clear:both">
 			
-			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Wed Jan 30 2013 14:09:19 GMT+0100 (CET)
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Mon Jan 06 2014 16:48:32 GMT+0100 (CET)
 		</div>
 	</body>
 </html>

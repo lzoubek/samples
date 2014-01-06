@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - permissions</title>
+		<title>JsDoc Reference - BundleGroup</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -266,7 +266,7 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace permissions
+				Class BundleGroup
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
@@ -274,7 +274,7 @@ ul.inheritsList
 				
 				
 			
-				provides access to all available permissions
+				
 				
 				
 					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_jon-tests_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
@@ -283,8 +283,8 @@ ul.inheritsList
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class permissions.">
-				<caption>Namespace Summary</caption>
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class BundleGroup.">
+				<caption>Class Summary</caption>
 				<thead>
 					<tr>
 						<th scope="col">Constructor Attributes</th>
@@ -296,7 +296,7 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/permissions.html#constructor">permissions</a></b>
+								<b><a href="../symbols/BundleGroup.html#constructor">BundleGroup</a></b>(param)
 							</div>
 							<div class="description"></div>
 						</td>
@@ -309,7 +309,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class permissions.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class BundleGroup.">
 					<caption>Field Summary</caption>
 					<thead>
 						<tr>
@@ -320,32 +320,32 @@ ul.inheritsList
 					<tbody>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.all">all</a></b>
+								<b><a href="../symbols/BundleGroup.html#id">id</a></b>
 								</div>
-								<div class="description">All available permission names</div>
+								<div class="description">gets ID of this group</div>
 							</td>
 						</tr>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.allGlobal">allGlobal</a></b>
+								<b><a href="../symbols/BundleGroup.html#name">name</a></b>
 								</div>
-								<div class="description">All available global (global permissions do not apply to specific resources in groups) permission names</div>
+								<div class="description">gets name of this group</div>
 							</td>
 						</tr>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.allResource">allResource</a></b>
+								<b><a href="../symbols/BundleGroup.html#obj">obj</a></b>
 								</div>
-								<div class="description">All available resource (resource permissions apply only to the resources in the role's groups) permission names</div>
+								<div class="description">gets underlying ResourceGroup instance</div>
 							</td>
 						</tr>
 					
@@ -360,7 +360,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class permissions.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class BundleGroup.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -371,11 +371,47 @@ ul.inheritsList
 					<tbody>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">permissions.<b><a href="../symbols/permissions.html#.printAllPermissions">printAllPermissions</a></b>()
+								<div class="fixedFont"><b><a href="../symbols/BundleGroup.html#assignBundles">assignBundles</a></b>(bundles)
 								</div>
-								<div class="description">Prints names and types of all permissions</div>
+								<div class="description">assigns bundles to this group, does nothing if bundles are already in this group</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/BundleGroup.html#bundles">bundles</a></b>()
+								</div>
+								<div class="description">returns bundles assigned to this group</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/BundleGroup.html#getId">getId</a></b>()
+								</div>
+								<div class="description">returns ID of this group</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/BundleGroup.html#remove">remove</a></b>()
+								</div>
+								<div class="description">removes this bundle group</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/BundleGroup.html#unassignBundles">unassignBundles</a></b>(bundles)
+								</div>
+								<div class="description">unassigns bundles to this group, does nothing if bundles are not assigned with this group</div>
 							</td>
 						</tr>
 					
@@ -392,11 +428,11 @@ ul.inheritsList
 			
 			<div class="details"><a name="constructor"> </a>
 				<div class="sectionTitle">
-					Namespace Detail
+					Class Detail
 				</div>
 				
 				<div class="fixedFont">
-						<b>permissions</b>
+						<b>BundleGroup</b>(param)
 				</div>
 				
 				<div class="description">
@@ -407,6 +443,17 @@ ul.inheritsList
 				
 				
 				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								 <b>param</b>
+								
+							</dt>
+								<dd></dd>
+						
+						</dl>
 					
 					
 					
@@ -424,15 +471,15 @@ ul.inheritsList
 					Field Detail
 				</div>
 				
-					<a name=".all"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="id"> </a>
+					<div class="fixedFont">
 					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>all</b>
+					
+					<b>id</b>
 					
 					</div>
 					<div class="description">
-						All available permission names
+						gets ID of this group
 						
 						
 					</div>
@@ -446,15 +493,15 @@ ul.inheritsList
 
 					<hr />
 				
-					<a name=".allGlobal"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="name"> </a>
+					<div class="fixedFont">
 					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>allGlobal</b>
+					
+					<b>name</b>
 					
 					</div>
 					<div class="description">
-						All available global (global permissions do not apply to specific resources in groups) permission names
+						gets name of this group
 						
 						
 					</div>
@@ -468,15 +515,15 @@ ul.inheritsList
 
 					<hr />
 				
-					<a name=".allResource"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="obj"> </a>
+					<div class="fixedFont">
 					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>allResource</b>
+					
+					<b>obj</b>
 					
 					</div>
 					<div class="description">
-						All available resource (resource permissions apply only to the resources in the role's groups) permission names
+						gets underlying ResourceGroup instance
 						
 						
 					</div>
@@ -498,21 +545,143 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name=".printAllPermissions"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="assignBundles"> </a>
+					<div class="fixedFont">
 					
 					
-					<span class="light">permissions.</span><b>printAllPermissions</b>()
+					<b>assignBundles</b>(bundles)
 					
 					</div>
 					<div class="description">
-						Prints names and types of all permissions
+						assigns bundles to this group, does nothing if bundles are already in this group
 						
 						
 					</div>
 					
 					
 					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Bundle.html">Bundle</a>[]}</span> <b>bundles</b>
+									
+								</dt>
+								<dd>to assign</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="bundles"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/Bundle.html">Bundle</a>[]}</span>
+					<b>bundles</b>()
+					
+					</div>
+					<div class="description">
+						returns bundles assigned to this group
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getId"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Number}</span>
+					<b>getId</b>()
+					
+					</div>
+					<div class="description">
+						returns ID of this group
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="remove"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>remove</b>()
+					
+					</div>
+					<div class="description">
+						removes this bundle group
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="unassignBundles"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>unassignBundles</b>(bundles)
+					
+					</div>
+					<div class="description">
+						unassigns bundles to this group, does nothing if bundles are not assigned with this group
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Bundle.html">Bundle</a>[]}</span> <b>bundles</b>
+									
+								</dt>
+								<dd>to assign</dd>
+							
+							</dl>
 						
 						
 						
@@ -535,7 +704,7 @@ ul.inheritsList
 <!-- ============================== footer ================================= -->
 		<div class="fineprint" style="clear:both">
 			
-			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Mon Jan 06 2014 16:48:32 GMT+0100 (CET)
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Mon Jan 06 2014 16:48:31 GMT+0100 (CET)
 		</div>
 	</body>
 </html>

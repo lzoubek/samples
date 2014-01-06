@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - permissions</title>
+		<title>JsDoc Reference - metricsTemplates</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -266,7 +266,7 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace permissions
+				Namespace metricsTemplates
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
@@ -274,7 +274,7 @@ ul.inheritsList
 				
 				
 			
-				provides access to all available permissions
+				provides access to metric templates
 				
 				
 					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_jon-tests_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
@@ -283,7 +283,7 @@ ul.inheritsList
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class permissions.">
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class metricsTemplates.">
 				<caption>Namespace Summary</caption>
 				<thead>
 					<tr>
@@ -296,7 +296,7 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/permissions.html#constructor">permissions</a></b>
+								<b><a href="../symbols/metricsTemplates.html#constructor">metricsTemplates</a></b>
 							</div>
 							<div class="description"></div>
 						</td>
@@ -309,49 +309,6 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class permissions.">
-					<caption>Field Summary</caption>
-					<thead>
-						<tr>
-							<th scope="col">Field Attributes</th>
-							<th scope="col">Field Name and Description</th>
-						</tr>
-					</thead>
-					<tbody>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.all">all</a></b>
-								</div>
-								<div class="description">All available permission names</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.allGlobal">allGlobal</a></b>
-								</div>
-								<div class="description">All available global (global permissions do not apply to specific resources in groups) permission names</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.allResource">allResource</a></b>
-								</div>
-								<div class="description">All available resource (resource permissions apply only to the resources in the role's groups) permission names</div>
-							</td>
-						</tr>
-					
-					</tbody>
-				</table>
-				
 				
 				
 			
@@ -360,7 +317,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class permissions.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class metricsTemplates.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -373,9 +330,27 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">permissions.<b><a href="../symbols/permissions.html#.printAllPermissions">printAllPermissions</a></b>()
+								<div class="fixedFont">metricsTemplates.<b><a href="../symbols/metricsTemplates.html#.disable">disable</a></b>(resTypes, filter)
 								</div>
-								<div class="description">Prints names and types of all permissions</div>
+								<div class="description">disables metrics</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">metricsTemplates.<b><a href="../symbols/metricsTemplates.html#.enable">enable</a></b>(resTypes, filter)
+								</div>
+								<div class="description">enables metrics</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">metricsTemplates.<b><a href="../symbols/metricsTemplates.html#.setCollectionInterval">setCollectionInterval</a></b>(resTypes, interval, filter)
+								</div>
+								<div class="description">sets collection interval for metrics</div>
 							</td>
 						</tr>
 					
@@ -396,7 +371,7 @@ ul.inheritsList
 				</div>
 				
 				<div class="fixedFont">
-						<b>permissions</b>
+						<b>metricsTemplates</b>
 				</div>
 				
 				<div class="description">
@@ -420,77 +395,6 @@ ul.inheritsList
 
 <!-- ============================== field details ========================== -->		
 			
-				<div class="sectionTitle">
-					Field Detail
-				</div>
-				
-					<a name=".all"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>all</b>
-					
-					</div>
-					<div class="description">
-						All available permission names
-						
-						
-					</div>
-					
-					
-
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".allGlobal"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>allGlobal</b>
-					
-					</div>
-					<div class="description">
-						All available global (global permissions do not apply to specific resources in groups) permission names
-						
-						
-					</div>
-					
-					
-
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".allResource"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>allResource</b>
-					
-					</div>
-					<div class="description">
-						All available resource (resource permissions apply only to the resources in the role's groups) permission names
-						
-						
-					</div>
-					
-					
-
-						
-						
-						
-						
-
-					
-				
-			
 
 <!-- ============================== method details ========================= -->		
 			
@@ -498,21 +402,144 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name=".printAllPermissions"> </a>
+					<a name=".disable"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
 					
-					<span class="light">permissions.</span><b>printAllPermissions</b>()
+					<span class="light">metricsTemplates.</span><b>disable</b>(resTypes, filter)
 					
 					</div>
 					<div class="description">
-						Prints names and types of all permissions
+						disables metrics
 						
 						
 					</div>
 					
 					
 					
+					<pre class="code">metricsTemplates.disable(resourceTypes.find({name: "server-b", plugin: "PerfTest"}), metricTemplates.predicates.isCallTime);</pre>
+					
+					<pre class="code">metricsTemplates.disable(resourceTypes.find());</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/ResourceType.html">ResourceType</a>[]}</span> <b>resTypes</b>
+									
+								</dt>
+								<dd>- resource types, see <a href="../symbols/resourceTypes.html#.find">resourceTypes.find</a></dd>
+							
+								<dt>
+									<b>filter</b>
+									
+								</dt>
+								<dd>- filter function - see <a href="../symbols/metricsTemplates.predicates.html">metricsTemplates.predicates</a></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".enable"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">metricsTemplates.</span><b>enable</b>(resTypes, filter)
+					
+					</div>
+					<div class="description">
+						enables metrics
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">metricsTemplates.enable(resourceTypes.find({name: "server-b", plugin: "PerfTest"}), metricTemplates.predicates.isCallTime);</pre>
+					
+					<pre class="code">metricsTemplates.enable(resourceTypes.find());</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/ResourceType.html">ResourceType</a>[]}</span> <b>resTypes</b>
+									
+								</dt>
+								<dd>- resource types, see <a href="../symbols/resourceTypes.html#.find">resourceTypes.find</a></dd>
+							
+								<dt>
+									<b>filter</b>
+									
+								</dt>
+								<dd>- filter function - see <a href="../symbols/metricsTemplates.predicates.html">metricsTemplates.predicates</a></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".setCollectionInterval"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">metricsTemplates.</span><b>setCollectionInterval</b>(resTypes, interval, filter)
+					
+					</div>
+					<div class="description">
+						sets collection interval for metrics
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">metricsTemplates.setCollectionInterval(resourceTypes.find({name: "server-b", plugin: "PerfTest"}), 30, metricTemplates.predicates.isCallTime);</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/ResourceType.html">ResourceType</a>[]}</span> <b>resTypes</b>
+									
+								</dt>
+								<dd>- resource types, see <a href="../symbols/resourceTypes.html#.find">resourceTypes.find</a></dd>
+							
+								<dt>
+									<b>interval</b>
+									
+								</dt>
+								<dd>- collection interval in seconds</dd>
+							
+								<dt>
+									<b>filter</b>
+									
+								</dt>
+								<dd>- filter function - see <a href="../symbols/metricsTemplates.predicates.html">metricsTemplates.predicates</a></dd>
+							
+							</dl>
 						
 						
 						

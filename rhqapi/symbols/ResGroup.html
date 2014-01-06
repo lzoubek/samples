@@ -191,6 +191,14 @@ ul.inheritsList
 	
 	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
 	
+	<li><a href="../symbols/Alert.html">Alert</a></li>
+	
+	<li><a href="../symbols/AlertDefinition.html">AlertDefinition</a></li>
+	
+	<li><a href="../symbols/AlertDefinition-Condition.html">AlertDefinition-Condition</a></li>
+	
+	<li><a href="../symbols/alertDefinitions.html">alertDefinitions</a></li>
+	
 	<li><a href="../symbols/Bundle.html">Bundle</a></li>
 	
 	<li><a href="../symbols/Bundle-Deployment.html">Bundle-Deployment</a></li>
@@ -199,13 +207,31 @@ ul.inheritsList
 	
 	<li><a href="../symbols/Bundle-Version.html">Bundle-Version</a></li>
 	
+	<li><a href="../symbols/BundleGroup.html">BundleGroup</a></li>
+	
+	<li><a href="../symbols/bundleGroups.html">bundleGroups</a></li>
+	
 	<li><a href="../symbols/bundles.html">bundles</a></li>
 	
 	<li><a href="../symbols/discoveryQueue.html">discoveryQueue</a></li>
 	
+	<li><a href="../symbols/DriftDefinition.html">DriftDefinition</a></li>
+	
+	<li><a href="../symbols/DriftDefinitionTemplate.html">DriftDefinitionTemplate</a></li>
+	
+	<li><a href="../symbols/drifts.html">drifts</a></li>
+	
+	<li><a href="../symbols/DynaGroupDefinition.html">DynaGroupDefinition</a></li>
+	
+	<li><a href="../symbols/dynaGroupDefinitions.html">dynaGroupDefinitions</a></li>
+	
 	<li><a href="../symbols/groups.html">groups</a></li>
 	
 	<li><a href="../symbols/Metric.html">Metric</a></li>
+	
+	<li><a href="../symbols/metricsTemplates.html">metricsTemplates</a></li>
+	
+	<li><a href="../symbols/metricsTemplates.predicates.html">metricsTemplates.predicates</a></li>
 	
 	<li><a href="../symbols/permissions.html">permissions</a></li>
 	
@@ -215,9 +241,17 @@ ul.inheritsList
 	
 	<li><a href="../symbols/resources.html">resources</a></li>
 	
+	<li><a href="../symbols/ResourceType.html">ResourceType</a></li>
+	
+	<li><a href="../symbols/resourceTypes.html">resourceTypes</a></li>
+	
 	<li><a href="../symbols/Role.html">Role</a></li>
 	
 	<li><a href="../symbols/roles.html">roles</a></li>
+	
+	<li><a href="../symbols/StorageNode.html">StorageNode</a></li>
+	
+	<li><a href="../symbols/storageNodes.html">storageNodes</a></li>
 	
 	<li><a href="../symbols/User.html">User</a></li>
 	
@@ -243,7 +277,7 @@ ul.inheritsList
 				
 				
 				
-					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_automatjon_jon_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
+					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_jon-tests_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
 				
 			</p>
 
@@ -299,6 +333,16 @@ ul.inheritsList
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
+								<b><a href="../symbols/ResGroup.html#name">name</a></b>
+								</div>
+								<div class="description">gets name of this group</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
 								<b><a href="../symbols/ResGroup.html#obj">obj</a></b>
 								</div>
 								<div class="description">gets underlying ResourceGroup instance</div>
@@ -338,6 +382,42 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ResGroup.html#getMetricIntervals">getMetricIntervals</a></b>(metricName)
+								</div>
+								<div class="description">Returns Array with metric intervals of given metric for all resources in this group.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ResGroup.html#getMetricStatuses">getMetricStatuses</a></b>(metricName)
+								</div>
+								<div class="description">Returns Array with metric statuses of given metric for all resources in this group.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ResGroup.html#isMetricDisabled">isMetricDisabled</a></b>(metricName)
+								</div>
+								<div class="description">Returns true only if given metric is disabled on all resources in this group</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ResGroup.html#isMetricEnabled">isMetricEnabled</a></b>(metricName)
+								</div>
+								<div class="description">Returns true only if given metric is enabled on all resources in this group</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/ResGroup.html#remove">remove</a></b>()
 								</div>
 								<div class="description">removes this resource group</div>
@@ -349,7 +429,43 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/ResGroup.html#resources">resources</a></b>(params)
 								</div>
-								<div class="description">get resources contained in this group</div>
+								<div class="description">get explicit resources contained in this group</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ResGroup.html#resourcesImpl">resourcesImpl</a></b>(params)
+								</div>
+								<div class="description">get implicit resources contained in this group</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ResGroup.html#runOperation">runOperation</a></b>(params)
+								</div>
+								<div class="description">Invokes operation on this group and returns result of the operation.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ResGroup.html#scheduleOperation">scheduleOperation</a></b>(params)
+								</div>
+								<div class="description">Schedules operation on this group.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ResGroup.html#scheduleOperationUsingCron">scheduleOperationUsingCron</a></b>(name, cronExpression, opParams)
+								</div>
+								<div class="description">schedules operation on this group using cron expression.</div>
 							</td>
 						</tr>
 					
@@ -431,6 +547,28 @@ ul.inheritsList
 
 					<hr />
 				
+					<a name="name"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>name</b>
+					
+					</div>
+					<div class="description">
+						gets name of this group
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
 					<a name="obj"> </a>
 					<div class="fixedFont">
 					
@@ -486,6 +624,172 @@ ul.inheritsList
 
 					<hr />
 				
+					<a name="getMetricIntervals"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getMetricIntervals</b>(metricName)
+					
+					</div>
+					<div class="description">
+						Returns Array with metric intervals of given metric for all resources in this group.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>metricName</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Array with javascript objects (hashmap) with following keys:
+<ul>
+<li>id {String} - resource id</li>
+<li>interval {Number} - metric collection interval</li>
+<ul></dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getMetricStatuses"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getMetricStatuses</b>(metricName)
+					
+					</div>
+					<div class="description">
+						Returns Array with metric statuses of given metric for all resources in this group.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>metricName</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Array with javascript objects (hashmap) with following keys:
+<ul>
+<li>id {String} - resource id</li>
+<li>isEnabled {Boolean} - true when metric is enabled</li>
+<ul></dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isMetricDisabled"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>isMetricDisabled</b>(metricName)
+					
+					</div>
+					<div class="description">
+						Returns true only if given metric is disabled on all resources in this group
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>metricName</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="isMetricEnabled"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>isMetricEnabled</b>(metricName)
+					
+					</div>
+					<div class="description">
+						Returns true only if given metric is enabled on all resources in this group
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>metricName</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
 					<a name="remove"> </a>
 					<div class="fixedFont">
 					
@@ -519,7 +823,7 @@ ul.inheritsList
 					
 					</div>
 					<div class="description">
-						get resources contained in this group
+						get explicit resources contained in this group
 						
 						
 					</div>
@@ -545,9 +849,206 @@ ul.inheritsList
 							<dl class="detailList">
 							<dt class="heading">Returns:</dt>
 							
-								<dd>array of resources</dd>
+								<dd>array of explicit resources</dd>
 							
 							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="resourcesImpl"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Resrouce[]}</span>
+					<b>resourcesImpl</b>(params)
+					
+					</div>
+					<div class="description">
+						get implicit resources contained in this group
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>params</b>
+									
+								</dt>
+								<dd>- you can filter child resources same way as in <a href="../symbols/resources.html#.find">resources.find</a>() function</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>array of implicit resources</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="runOperation"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>runOperation</b>(params)
+					
+					</div>
+					<div class="description">
+						Invokes operation on this group and returns result of the operation.
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">allAgents.invokeOperation("executeAvailabilityScan");</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>params</b>
+									
+								</dt>
+								<dd>- inputs for scheduling with fileds as follows:
+ <ul>
+     <li>{String} name - name of operation (required)</li>
+     <li>{boolean} haltOnFailure (optional, default is true)</li>
+     <li>{Array} executionOrderResources defines execution order (optional)</li>
+     <li>{String} description (optional)</li>
+     <li>{Object} config - hashmap for operation params (Configuration) (optional)</li>
+ </ul></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="scheduleOperation"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>scheduleOperation</b>(params)
+					
+					</div>
+					<div class="description">
+						Schedules operation on this group. In contrast to invokeOperation this is 
+not blocking operation.
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">scheduleOperation({name:"executeAvailabilityScan",delay:10,repeatInterval:10,repeatCount:10,config:{changesOnly:false});</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>params</b>
+									
+								</dt>
+								<dd>- inputs for scheduling with fileds as follows:
+ <ul>
+     <li>{String} name of operation (required)</li>
+     <li>{Number} delay of operation in seconds (optional, 0 is default)</li>
+     <li>{Number} repeatInterval of operation in seconds (optional, 0 is default)</li>
+     <li>{Number} repeatCount of operations (optional, 0 is default)</li>
+     <li>{Number} timeout of operation in seconds (optional, 0 is default)</li>
+     <li>{boolean} haltOnFailure (optional, default is true)</li>
+     <li>{Array} executionOrderResources defines execution order (optional)</li>
+     <li>{String} description (optional)</li>
+     <li>{Object} config - hashmap for operation params (Configuration) (optional)</li>
+     <li></li>
+     <li></li>
+ </ul></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="scheduleOperationUsingCron"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>scheduleOperationUsingCron</b>(name, cronExpression, opParams)
+					
+					</div>
+					<div class="description">
+						schedules operation on this group using cron expression. In contrast to invokeOperation this is 
+not blocking operation.
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">allAgents.scheduleOperationUsingCron("executeAvailabilityScan","5 5 5 * * ?",{changesOnly:false});</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>name</b>
+									
+								</dt>
+								<dd>of operation (required)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>cronExpression</b>
+									
+								</dt>
+								<dd>(required)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>opParams</b>
+									
+								</dt>
+								<dd>- hashmap for operation params (Configuration) (optional)</dd>
+							
+							</dl>
+						
+						
+						
+						
 						
 						
 						
@@ -566,7 +1067,7 @@ ul.inheritsList
 <!-- ============================== footer ================================= -->
 		<div class="fineprint" style="clear:both">
 			
-			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Wed Jan 30 2013 14:09:19 GMT+0100 (CET)
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Mon Jan 06 2014 16:48:32 GMT+0100 (CET)
 		</div>
 	</body>
 </html>

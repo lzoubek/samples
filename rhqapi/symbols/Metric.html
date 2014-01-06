@@ -191,6 +191,14 @@ ul.inheritsList
 	
 	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
 	
+	<li><a href="../symbols/Alert.html">Alert</a></li>
+	
+	<li><a href="../symbols/AlertDefinition.html">AlertDefinition</a></li>
+	
+	<li><a href="../symbols/AlertDefinition-Condition.html">AlertDefinition-Condition</a></li>
+	
+	<li><a href="../symbols/alertDefinitions.html">alertDefinitions</a></li>
+	
 	<li><a href="../symbols/Bundle.html">Bundle</a></li>
 	
 	<li><a href="../symbols/Bundle-Deployment.html">Bundle-Deployment</a></li>
@@ -199,13 +207,31 @@ ul.inheritsList
 	
 	<li><a href="../symbols/Bundle-Version.html">Bundle-Version</a></li>
 	
+	<li><a href="../symbols/BundleGroup.html">BundleGroup</a></li>
+	
+	<li><a href="../symbols/bundleGroups.html">bundleGroups</a></li>
+	
 	<li><a href="../symbols/bundles.html">bundles</a></li>
 	
 	<li><a href="../symbols/discoveryQueue.html">discoveryQueue</a></li>
 	
+	<li><a href="../symbols/DriftDefinition.html">DriftDefinition</a></li>
+	
+	<li><a href="../symbols/DriftDefinitionTemplate.html">DriftDefinitionTemplate</a></li>
+	
+	<li><a href="../symbols/drifts.html">drifts</a></li>
+	
+	<li><a href="../symbols/DynaGroupDefinition.html">DynaGroupDefinition</a></li>
+	
+	<li><a href="../symbols/dynaGroupDefinitions.html">dynaGroupDefinitions</a></li>
+	
 	<li><a href="../symbols/groups.html">groups</a></li>
 	
 	<li><a href="../symbols/Metric.html">Metric</a></li>
+	
+	<li><a href="../symbols/metricsTemplates.html">metricsTemplates</a></li>
+	
+	<li><a href="../symbols/metricsTemplates.predicates.html">metricsTemplates.predicates</a></li>
 	
 	<li><a href="../symbols/permissions.html">permissions</a></li>
 	
@@ -215,9 +241,17 @@ ul.inheritsList
 	
 	<li><a href="../symbols/resources.html">resources</a></li>
 	
+	<li><a href="../symbols/ResourceType.html">ResourceType</a></li>
+	
+	<li><a href="../symbols/resourceTypes.html">resourceTypes</a></li>
+	
 	<li><a href="../symbols/Role.html">Role</a></li>
 	
 	<li><a href="../symbols/roles.html">roles</a></li>
+	
+	<li><a href="../symbols/StorageNode.html">StorageNode</a></li>
+	
+	<li><a href="../symbols/storageNodes.html">storageNodes</a></li>
 	
 	<li><a href="../symbols/User.html">User</a></li>
 	
@@ -243,7 +277,7 @@ ul.inheritsList
 				
 				
 				
-					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_automatjon_jon_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
+					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_jon-tests_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
 				
 			</p>
 
@@ -273,6 +307,34 @@ ul.inheritsList
 
 <!-- ============================== properties summary ===================== -->
 			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class Metric.">
+					<caption>Field Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Field Attributes</th>
+							<th scope="col">Field Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/Metric.html#dataType">dataType</a></b>
+								</div>
+								<div class="description">data type of metric</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
 
 <!-- ============================== methods summary ======================== -->
 			
@@ -291,9 +353,27 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Metric.html#getInterval">getInterval</a></b>()
+								</div>
+								<div class="description">gets actual metric collection interval</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/Metric.html#getLiveValue">getLiveValue</a></b>()
 								</div>
 								<div class="description">gets live value for metric</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Metric.html#isEnabled">isEnabled</a></b>()
+								</div>
+								<div class="description">returns true if this metrics is enabled, false otherwise</div>
 							</td>
 						</tr>
 					
@@ -347,12 +427,71 @@ ul.inheritsList
 
 <!-- ============================== field details ========================== -->		
 			
+				<div class="sectionTitle">
+					Field Detail
+				</div>
+				
+					<a name="dataType"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>dataType</b>
+					
+					</div>
+					<div class="description">
+						data type of metric
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					
+				
+			
 
 <!-- ============================== method details ========================= -->		
 			
 				<div class="sectionTitle">
 					Method Detail
 				</div>
+				
+					<a name="getInterval"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Number}</span>
+					<b>getInterval</b>()
+					
+					</div>
+					<div class="description">
+						gets actual metric collection interval
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Number interval in milis</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
 				
 					<a name="getLiveValue"> </a>
 					<div class="fixedFont">
@@ -378,6 +517,38 @@ ul.inheritsList
 							<dt class="heading">Returns:</dt>
 							
 								<dd>String whatever the value is</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isEnabled"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Boolean}</span>
+					<b>isEnabled</b>()
+					
+					</div>
+					<div class="description">
+						returns true if this metrics is enabled, false otherwise
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Boolean true if this metrics is enabled, false otherwise</dd>
 							
 							</dl>
 						
@@ -440,7 +611,7 @@ ul.inheritsList
 <!-- ============================== footer ================================= -->
 		<div class="fineprint" style="clear:both">
 			
-			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Wed Jan 30 2013 14:09:19 GMT+0100 (CET)
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Mon Jan 06 2014 16:48:32 GMT+0100 (CET)
 		</div>
 	</body>
 </html>

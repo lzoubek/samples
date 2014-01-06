@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - permissions</title>
+		<title>JsDoc Reference - ResourceType</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -266,7 +266,7 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace permissions
+				Class ResourceType
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
@@ -274,7 +274,7 @@ ul.inheritsList
 				
 				
 			
-				provides access to all available permissions
+				
 				
 				
 					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_jon-tests_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
@@ -283,8 +283,8 @@ ul.inheritsList
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class permissions.">
-				<caption>Namespace Summary</caption>
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class ResourceType.">
+				<caption>Class Summary</caption>
 				<thead>
 					<tr>
 						<th scope="col">Constructor Attributes</th>
@@ -296,9 +296,9 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/permissions.html#constructor">permissions</a></b>
+								<b><a href="../symbols/ResourceType.html#constructor">ResourceType</a></b>(rhqType)
 							</div>
-							<div class="description"></div>
+							<div class="description">creates a new instance of Resource Type</div>
 						</td>
 					</tr>
 				</tbody>
@@ -309,7 +309,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class permissions.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class ResourceType.">
 					<caption>Field Summary</caption>
 					<thead>
 						<tr>
@@ -320,32 +320,42 @@ ul.inheritsList
 					<tbody>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.all">all</a></b>
+								<b><a href="../symbols/ResourceType.html#id">id</a></b>
 								</div>
-								<div class="description">All available permission names</div>
+								<div class="description">resource type id</div>
 							</td>
 						</tr>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.allGlobal">allGlobal</a></b>
+								<b><a href="../symbols/ResourceType.html#name">name</a></b>
 								</div>
-								<div class="description">All available global (global permissions do not apply to specific resources in groups) permission names</div>
+								<div class="description">resource type name</div>
 							</td>
 						</tr>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.allResource">allResource</a></b>
+								<b><a href="../symbols/ResourceType.html#obj">obj</a></b>
 								</div>
-								<div class="description">All available resource (resource permissions apply only to the resources in the role's groups) permission names</div>
+								<div class="description">org.rhq.core.domain.resource.ResourceType instance</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/ResourceType.html#plugin">plugin</a></b>
+								</div>
+								<div class="description">plugin name defining this resource type</div>
 							</td>
 						</tr>
 					
@@ -360,7 +370,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class permissions.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class ResourceType.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -371,11 +381,11 @@ ul.inheritsList
 					<tbody>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">permissions.<b><a href="../symbols/permissions.html#.printAllPermissions">printAllPermissions</a></b>()
+								<div class="fixedFont"><b><a href="../symbols/ResourceType.html#getDefaultConfiguration">getDefaultConfiguration</a></b>()
 								</div>
-								<div class="description">Prints names and types of all permissions</div>
+								<div class="description"></div>
 							</td>
 						</tr>
 					
@@ -392,21 +402,32 @@ ul.inheritsList
 			
 			<div class="details"><a name="constructor"> </a>
 				<div class="sectionTitle">
-					Namespace Detail
+					Class Detail
 				</div>
 				
 				<div class="fixedFont">
-						<b>permissions</b>
+						<b>ResourceType</b>(rhqType)
 				</div>
 				
 				<div class="description">
-					
+					creates a new instance of Resource Type
 					
 				</div>
 				
 				
 				
 				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								<span class="light fixedFont">{org.rhq.core.domain.resource.ResourceType}</span>  <b>rhqType</b>
+								
+							</dt>
+								<dd></dd>
+						
+						</dl>
 					
 					
 					
@@ -424,15 +445,15 @@ ul.inheritsList
 					Field Detail
 				</div>
 				
-					<a name=".all"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="id"> </a>
+					<div class="fixedFont">
 					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>all</b>
+					<span class="light">{Number}</span>
+					<b>id</b>
 					
 					</div>
 					<div class="description">
-						All available permission names
+						resource type id
 						
 						
 					</div>
@@ -446,15 +467,15 @@ ul.inheritsList
 
 					<hr />
 				
-					<a name=".allGlobal"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="name"> </a>
+					<div class="fixedFont">
 					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>allGlobal</b>
+					<span class="light">{String}</span>
+					<b>name</b>
 					
 					</div>
 					<div class="description">
-						All available global (global permissions do not apply to specific resources in groups) permission names
+						resource type name
 						
 						
 					</div>
@@ -468,15 +489,37 @@ ul.inheritsList
 
 					<hr />
 				
-					<a name=".allResource"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="obj"> </a>
+					<div class="fixedFont">
 					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>allResource</b>
+					<span class="light">{org.rhq.core.domain.resource.ResourceType}</span>
+					<b>obj</b>
 					
 					</div>
 					<div class="description">
-						All available resource (resource permissions apply only to the resources in the role's groups) permission names
+						org.rhq.core.domain.resource.ResourceType instance
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="plugin"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>plugin</b>
+					
+					</div>
+					<div class="description">
+						plugin name defining this resource type
 						
 						
 					</div>
@@ -498,15 +541,15 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name=".printAllPermissions"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="getDefaultConfiguration"> </a>
+					<div class="fixedFont">
 					
-					
-					<span class="light">permissions.</span><b>printAllPermissions</b>()
+					<span class="light">{hash}</span>
+					<b>getDefaultConfiguration</b>()
 					
 					</div>
 					<div class="description">
-						Prints names and types of all permissions
+						
 						
 						
 					</div>
@@ -517,6 +560,13 @@ ul.inheritsList
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>default configuration for this resource type as hash</dd>
+							
+							</dl>
 						
 						
 						

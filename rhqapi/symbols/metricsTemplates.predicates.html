@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - permissions</title>
+		<title>JsDoc Reference - metricsTemplates.predicates</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -266,7 +266,7 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace permissions
+				Namespace metricsTemplates.predicates
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
@@ -274,7 +274,7 @@ ul.inheritsList
 				
 				
 			
-				provides access to all available permissions
+				metric template predicates
 				
 				
 					<br /><i>Defined in: </i> <a href="../symbols/src/_data_src_jon-tests_clitest_src_main_resources_js-files_rhqapi.js.html">rhqapi.js</a>.
@@ -283,7 +283,7 @@ ul.inheritsList
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class permissions.">
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class metricsTemplates.predicates.">
 				<caption>Namespace Summary</caption>
 				<thead>
 					<tr>
@@ -296,7 +296,7 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/permissions.html#constructor">permissions</a></b>
+								<b><a href="../symbols/metricsTemplates.predicates.html#constructor">metricsTemplates.predicates</a></b>
 							</div>
 							<div class="description"></div>
 						</td>
@@ -309,7 +309,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class permissions.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class metricsTemplates.predicates.">
 					<caption>Field Summary</caption>
 					<thead>
 						<tr>
@@ -323,9 +323,9 @@ ul.inheritsList
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.all">all</a></b>
+								metricsTemplates.predicates.<b><a href="../symbols/metricsTemplates.predicates.html#.isCallTime">isCallTime</a></b>
 								</div>
-								<div class="description">All available permission names</div>
+								<div class="description">predicate that accepts metric definitions of CALLTIME DataType</div>
 							</td>
 						</tr>
 					
@@ -333,9 +333,9 @@ ul.inheritsList
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.allGlobal">allGlobal</a></b>
+								metricsTemplates.predicates.<b><a href="../symbols/metricsTemplates.predicates.html#.isNumeric">isNumeric</a></b>
 								</div>
-								<div class="description">All available global (global permissions do not apply to specific resources in groups) permission names</div>
+								<div class="description">predicate that accepts metric definitions of MEASUREMENT DataType</div>
 							</td>
 						</tr>
 					
@@ -343,9 +343,9 @@ ul.inheritsList
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								permissions.<b><a href="../symbols/permissions.html#.allResource">allResource</a></b>
+								metricsTemplates.predicates.<b><a href="../symbols/metricsTemplates.predicates.html#.isTrait">isTrait</a></b>
 								</div>
-								<div class="description">All available resource (resource permissions apply only to the resources in the role's groups) permission names</div>
+								<div class="description">predicate that accepts metric definitions of TRAIT DataType</div>
 							</td>
 						</tr>
 					
@@ -358,33 +358,6 @@ ul.inheritsList
 
 <!-- ============================== methods summary ======================== -->
 			
-				
-				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class permissions.">
-					<caption>Method Summary</caption>
-					<thead>
-						<tr>
-							<th scope="col">Method Attributes</th>
-							<th scope="col">Method Name and Description</th>
-						</tr>
-					</thead>
-					<tbody>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">permissions.<b><a href="../symbols/permissions.html#.printAllPermissions">printAllPermissions</a></b>()
-								</div>
-								<div class="description">Prints names and types of all permissions</div>
-							</td>
-						</tr>
-					
-					</tbody>
-				</table>
-				
-				
-				
-			
 <!-- ============================== events summary ======================== -->
 			
 
@@ -396,7 +369,7 @@ ul.inheritsList
 				</div>
 				
 				<div class="fixedFont">
-						<b>permissions</b>
+						<b>metricsTemplates.predicates</b>
 				</div>
 				
 				<div class="description">
@@ -424,15 +397,15 @@ ul.inheritsList
 					Field Detail
 				</div>
 				
-					<a name=".all"> </a>
+					<a name=".isCallTime"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>all</b>
+					
+					<span class="light">metricsTemplates.predicates.</span><b>isCallTime</b>
 					
 					</div>
 					<div class="description">
-						All available permission names
+						predicate that accepts metric definitions of CALLTIME DataType
 						
 						
 					</div>
@@ -446,15 +419,15 @@ ul.inheritsList
 
 					<hr />
 				
-					<a name=".allGlobal"> </a>
+					<a name=".isNumeric"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>allGlobal</b>
+					
+					<span class="light">metricsTemplates.predicates.</span><b>isNumeric</b>
 					
 					</div>
 					<div class="description">
-						All available global (global permissions do not apply to specific resources in groups) permission names
+						predicate that accepts metric definitions of MEASUREMENT DataType
 						
 						
 					</div>
@@ -468,15 +441,15 @@ ul.inheritsList
 
 					<hr />
 				
-					<a name=".allResource"> </a>
+					<a name=".isTrait"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					<span class="light">{String[]}</span>
-					<span class="light">permissions.</span><b>allResource</b>
+					
+					<span class="light">metricsTemplates.predicates.</span><b>isTrait</b>
 					
 					</div>
 					<div class="description">
-						All available resource (resource permissions apply only to the resources in the role's groups) permission names
+						predicate that accepts metric definitions of TRAIT DataType
 						
 						
 					</div>
@@ -493,36 +466,6 @@ ul.inheritsList
 			
 
 <!-- ============================== method details ========================= -->		
-			
-				<div class="sectionTitle">
-					Method Detail
-				</div>
-				
-					<a name=".printAllPermissions"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					
-					<span class="light">permissions.</span><b>printAllPermissions</b>()
-					
-					</div>
-					<div class="description">
-						Prints names and types of all permissions
-						
-						
-					</div>
-					
-					
-					
-						
-						
-						
-						
-						
-						
-						
-
-					
-				
 			
 			
 <!-- ============================== event details ========================= -->		
